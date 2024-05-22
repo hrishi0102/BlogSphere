@@ -1,0 +1,19 @@
+1. npm create hono@latest
+    template - cloudflare workers
+2. Get Neonb db and prisma accelerate URL for connection pooling
+3. npm i prisma
+    npm prisma init
+4. Add neon db in .env
+5. Add P Accelerate API in wrangler.toml in vars
+6. npx prisma migrate dev --name init_schema
+7. npx prisma genearte --no-engine
+8. npm i @prisma/extension-accelerate
+    Initialize prisma client with: 
+        "import { PrismaClient } from '@prisma/client/edge'
+        import { withAccelerate } from '@prisma/extension-accelerate'
+        const prisma = new PrismaClient({
+            datasourceUrl: env.DATABASE_URL,
+        }).$extends(withAccelerate())"
+9. npx wrangler login
+10. npm run depoly
+11. Update env from cloudbase dashboard
