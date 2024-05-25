@@ -21,7 +21,7 @@ export const Auth = ({ type }: Type) => {
   async function sendRequest() {
     try {
       const response = await axios.post(
-        `${BACKEND_URL}/${type === "signup" ? "signup" : "signin"}`,
+        `${BACKEND_URL}/user/${type === "signup" ? "signup" : "signin"}`,
         {
           name,
           email,

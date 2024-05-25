@@ -16,6 +16,7 @@ export const Blogs = () => {
             <BlogCard
               authorName={blog.author.name || "Anonymous"}
               title={blog.title}
+              id={blog.id}
               content={blog.content}
               publishedDate={"24 May 2024"}
             ></BlogCard>
