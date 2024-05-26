@@ -50,7 +50,9 @@ export const Auth = ({ type }: Type) => {
               placeholder="John"
               label={"Name"}
             />
-          ) : null}
+          ) : (
+            ""
+          )}
 
           <InputBox
             onChange={(e) => {
