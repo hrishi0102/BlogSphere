@@ -2,7 +2,7 @@ export const Appbar = () => {
   return (
     <div className="border-b flex justify-between px-10 py-4">
       <div>
-        <a href="/">BlogSphere</a>
+        <a href="/blogs">BlogSphere</a>
       </div>
       <div>
         <Avatar />
