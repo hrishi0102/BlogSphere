@@ -4,9 +4,9 @@
 3. npm i prisma
     npm prisma init
 4. Add neon db in .env
-5. Add P Accelerate API in wrangler.toml in vars
+5. Add Prisma Accelerate API in wrangler.toml in vars
 6. npx prisma migrate dev --name init_schema
-7. npx prisma genearte --no-engine
+7. npx prisma generate --no-engine
 8. npm i @prisma/extension-accelerate
     Initialize prisma client with: 
         "import { PrismaClient } from '@prisma/client/edge'
