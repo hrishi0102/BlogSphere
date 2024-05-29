@@ -23,6 +23,12 @@ This project is a modern blogging platform designed to provide a seamless and ef
 - **Database**: PostgreSQL
 - **Authentication**: JWT (JSON Web Tokens)
 
+### You can find the published NPM package for zod validations (typescript) here:
+(https://www.npmjs.com/package/@hrishi0102/blogging-site)
+```bash
+   npm i @hrishi0102/blogging-site
+   ```
+
 ## Installation
 
 ### Prerequisites
